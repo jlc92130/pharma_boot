@@ -1,3 +1,7 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 600px) { //WHEN SCREEN SIZE <600  THEN LOGO FULL SCREEN
     header img { width: 100%; }
+  }
+
+  header {
+    height:300px;
   }
