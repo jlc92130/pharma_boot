@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pharmacie</title>
     <link rel="stylesheet" href="pharma.css" type="text/css"  />
-    <script src="pharma.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -77,37 +77,37 @@
   <section>
     <div class="container text-center">
     
-      <h2>Meilleures ventes</h2>
+      <h2 class="p-3 bg-light">Meilleures ventes</h2>
       
       
-      <div class="card card-deck text-center">
-        <div class="card" style="width: 18rem;">
-          <img class="mt-2" src="https://srv1.parashop.com/34044-home_default/menthe-aquatique-shampooing-detox-400ml.jpg" />
+      <div class="card-deck text-center">
+        <div class="card" >
+          <img class="mt-2" src="https://srv1.parashop.com/34044-home_default/menthe-aquatique-shampooing-detox-400ml.jpg" class="card-img-top"/>
           <div class="card-body">
-            <h5>Shampoing Klorane</h5>
+            <h5 class="card-title">Shampoing Klorane</h5>
           </div>
           <div class="card-footer">
-            <button>Acheter</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#shampoing">Acheter</button>
           </div>
         </div>
         
-        <div class="card text-center" style="width:18rem">
-          <img src="https://srv3.parashop.com/23657-home_default/dentifrice-blancheur-75-ml.jpg" />
+        <div class="card" >
+          <img class="mt-2" src="https://srv3.parashop.com/23657-home_default/dentifrice-blancheur-75-ml.jpg" class="card-img-top"/>
           <div class="card-body">
-            <h5>Fluoflor</h5>
+            <h5 class="card-title">Fluoflor</h5>
           </div>
           <div class="card-footer">
-            <button>Acheter</button>
+            <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#fluo">Acheter</button>
           </div>
         </div>
         
-        <div class="card" style="width:18rem">
-          <img src="https://srv1.parashop.com/23063-home_default/brosse-a-dents-souple.jpg" />
-          <div class="=card-body">
-            <h5>Brosse à dent</h5>
+        <div class="card"  >
+          <img class="mt-2" src="https://srv1.parashop.com/23063-home_default/brosse-a-dents-souple.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Brosse à dent</h5>
           </div>
           <div class="card-footer">
-            <button>Acheter</button>
+            <button class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#brosseDent">Acheter</button>
           </div>
         </div>
       </div>
@@ -115,71 +115,72 @@
   </section>
   
 
-  <footer>
+  <footer class="bg-dark text-light p-3 text-right">
     <div class="container">
       2020 © Pharma
     </div>
   </footer>
   
  
-  <div id="shampoing">
-    <div>
-      <div>
-        <div>
-          <h5>Shampoing Klorane</h5>
-          <button>
-            <span>&times;</span>
+  <div class="modal " id="shampoing">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Shampoing Klorane</h5>
+          <button class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://srv1.parashop.com/34044-home_default/menthe-aquatique-shampooing-detox-400ml.jpg" />
+        <div class="modal-body">
+          <img src="https://srv1.parashop.com/34044-home_default/menthe-aquatique-shampooing-detox-400ml.jpg" class="d-block mx-auto w-100" />
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn btn-primary" data-toggle="tooltip" data-placement="top"  title="Soon available">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
   
-  <div id="fluo">
-    <div>
-      <div>
-        <div>
-          <h5>Fluoflor</h5>
-          <button>
+  <div class="modal" id="fluo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Fluoflor</h5>
+          <button class="close" data-dismiss="modal" aria-label="close">
             <span>&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://srv3.parashop.com/23657-home_default/dentifrice-blancheur-75-ml.jpg" />
+        <div class="modal-body">
+          <img src="https://srv3.parashop.com/23657-home_default/dentifrice-blancheur-75-ml.jpg" class="d-block mx-auto w-100" />
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Soon available">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
   
-  <div id="brosse">
-    <div>
-      <div>
-        <div>
-          <h5>Brosse à dent</h5>
-          <button>
+  <div class="modal" id="brosseDent">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Brosse à dent</h5>
+          <button class="close" data-dismiss="modal" aria-label="close">
             <span>&times;</span>
           </button>
         </div>
-        <div>
-          <img src="https://srv1.parashop.com/23063-home_default/brosse-a-dents-souple.jpg" />
+        <div class="modal-body">
+          <img src="https://srv1.parashop.com/23063-home_default/brosse-a-dents-souple.jpg" class="d-block mx-auto w-100"/>
         </div>
-        <div>
-          <button>Fermer</button>
-          <button>Ajouter au panier</button>
+        <div class="modal-footer">
+          <button class="btn-secondary" data-dismiss="modal">Fermer</button>
+          <button class="btn-primary" data-toggle="tooltip" data-placement="top" title="Soon available">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
+  <script src="pharma.js"></script>
 </body>
 </html>
